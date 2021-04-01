@@ -1,0 +1,39 @@
+{
+  "name": "netlify-cms-custom-block-element-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidag95/netlify-cms-custom-block-element-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidag95/netlify-cms-custom-block-element-test/issues"
+  },
+  "homepage": "https://github.com/sidag95/netlify-cms-custom-block-element-test#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.1",
+    "netlify-cms-app": "^2.14.34",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "sirv": "^1.0.11",
+    "source-map-loader": "^2.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.28.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13"
+  }
+}
