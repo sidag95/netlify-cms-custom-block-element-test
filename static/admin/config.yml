@@ -1,6 +1,7 @@
 backend:
     name: github
     repo: sidag95/netlify-cms-custom-block-element-test
+    squash_merges: true
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
@@ -9,11 +10,23 @@ collections:
     label: "Post" # Used in the UI
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    nested: { depth: 100 }
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "api"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title here", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Table", name: "table", widget: "table", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+  
+  - name: "partial" # Used in routes, e.g., /admin/collections/blog
+    label: "Partial" # Used in the UI
+    folder: "partial" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   

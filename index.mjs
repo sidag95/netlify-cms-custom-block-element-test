@@ -46,7 +46,7 @@ webpack(webpackConfig, (err, stats) => {
           .toString();
         res.send(html);
       })
-      .use("/admin", sirv("static/admin", { dev: true }))
+      .use("/", sirv("static/admin", { dev: true }))
       .listen("8888", () => {
         console.log("Listening on 8888");
       });
