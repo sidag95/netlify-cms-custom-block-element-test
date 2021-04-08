@@ -2,8 +2,14 @@ import React from "react";
 
 export function TableWidgetPreivew(props) {
   const { value } = props;
-  console.log(value);
-  return <div>{JSON.stringify(value)}</div>;
+  console.log("Prev -->", value);
+  return (
+    <table>
+      <tbody>
+        <td>{JSON.stringify(value)}</td>
+      </tbody>
+    </table>
+  );
 }
 
 export function TableWidgetControl(props) {
@@ -14,14 +20,18 @@ export function TableWidgetControl(props) {
   }
 
   return (
-    <div
+    <table
       style={{
         border: "2px solid lightgrey",
         padding: "16px",
         borderRadius: "4px",
       }}
     >
-      <input value={value} onChange={handleOnChange} />
-    </div>
+      <tbody>
+        <td>
+          <input value={value} onChange={handleOnChange} />
+        </td>
+      </tbody>
+    </table>
   );
 }
