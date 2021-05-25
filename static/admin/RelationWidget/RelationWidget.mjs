@@ -34,6 +34,6 @@ export const relationWidgetDefinition = {
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function (obj) {
-    return <div>{obj.data}</div>;
+    return <div>Content from Partial {obj.relation} will be included</div>;
   },
 };
