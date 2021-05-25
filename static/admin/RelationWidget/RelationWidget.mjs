@@ -13,20 +13,22 @@ export const relationWidgetDefinition = {
       widget: "relation",
       collection: "partials",
       search_fields: ["title"],
-      value_field: "body",
+      value_field: "title",
       display_fields: ["title"],
     },
   ],
   // Pattern to identify a block as being an instance of this component
-  pattern: /^@include([\s\S]*?)/,
+  pattern: /^@include\s([^\n]+)/,
   // Function to extract data elements from the regexp match
   fromBlock: function (match) {
+    console.log("match", JSON.stringify(match));
     return {
-      data: match[1],
+      relation: match[1],
     };
   },
   // Function to create a text block from an instance of this component
   toBlock: function (obj) {
+    console.log(JSON.stringify(obj));
     return `@include ${obj.relation}`;
   },
   // Preview output for this component. Can either be a string or a React component
