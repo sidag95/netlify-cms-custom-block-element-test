@@ -6,7 +6,10 @@ import {
   tableWidgetDefinition,
 } from "./TableWidget/TableWidget.mjs";
 
+import { relationWidgetDefinition } from "./RelationWidget/RelationWidget.mjs";
+
 // CMS.registerPreviewTemplate("post", PagePreview);
 CMS.registerWidget("table", TableWidgetControl, TableWidgetPreivew);
 CMS.registerEditorComponent(tableWidgetDefinition);
+CMS.registerEditorComponent(relationWidgetDefinition);
 CMS.init();
