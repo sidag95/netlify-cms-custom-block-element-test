@@ -3,8 +3,8 @@ backend:
     repo: sidag95/netlify-cms-custom-block-element-test
     squash_merges: true
 publish_mode: editorial_workflow
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: "assets/images"
+public_folder: "assets/images"
 collections:
   - name: "routes" # Used in routes, e.g., /admin/collections/src
     label: "Routes" # Used in the UI
