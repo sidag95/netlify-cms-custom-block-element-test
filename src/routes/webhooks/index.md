@@ -5,9 +5,10 @@ desc: Webhooks doc
 tree: |-
   webhooks
 
-  \| sub nav
+  test | Test Webhooks
+    | nav2
 
-    nav 2 | This is Nav 2
+  sample | Sample Payload
 ---
 # Webhooks
 
