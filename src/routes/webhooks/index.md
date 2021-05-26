@@ -34,8 +34,6 @@ Sometimes, the communication between the bank and Razorpay or between you and Ra
 
 You can use webhooks to get notified about payments that get authorized and analyze this data to decide whether or not to capture the payment.
 
-
-
 More text
 
 @include Partial 1
