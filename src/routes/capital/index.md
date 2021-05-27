@@ -20,6 +20,4 @@ Razorpay Capital is a lending platform that allows you to meet your cash flow ch
 
 @include Partial 1
 
-
-
 1. Acb
