@@ -10,6 +10,4 @@ Bank
 
 ## This is a linkable section
 
-
-
 ![](/download.png)
