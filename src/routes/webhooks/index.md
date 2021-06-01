@@ -20,7 +20,7 @@ A test mode webhook will only receive events for your test transactions.
 
 In URLs, only port numbers 80 and 443 are currently allowed.
 
-This content is from vscode.
+This is content from CMS.
 
 ## [](https://razorpay.com/docs/webhooks/#use-cases)Use cases
 
