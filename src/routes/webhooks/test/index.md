@@ -27,7 +27,3 @@ There are many free webhook testing tools available online. A simple Google sear
    2. Paste the endpoint you copied in the previous step, in the **Website URL** field.
 
 If you have enabled the appropriate webhook event during setup, you will receive the corresponding webhook payload on your requestbin.com site.
-
-
-
-![Logo](/assets/images/download.png)
