@@ -5,6 +5,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "/assets/images"
 public_folder: "/assets/images"
+site_url: "https://razorpay.com/docs"
 collections:
   - name: "routes" # Used in routes, e.g., /admin/collections/src
     label: "Routes" # Used in the UI
@@ -12,8 +13,10 @@ collections:
     create: true # Allow users to create new documents in this collection
     nested: { depth: 100 }
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    media_folder: "{{media_folder}}/{{path}}/"
-    public_folder: "{{media_folder}}/{{path}}/"
+    preview_path: "{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{media_folder}}"
+    summary: "Title: {{title}} | written by: {{commit_author | upper}} | last updated at: {{commit_date | date('YYYY-MM-DD')}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "select", options: ["api", "product"]}
       - {label: "Title here", name: "title", widget: "string"}
