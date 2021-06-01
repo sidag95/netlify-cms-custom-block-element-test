@@ -20,7 +20,7 @@ A test mode webhook will only receive events for your test transactions.
 
 In URLs, only port numbers 80 and 443 are currently allowed.
 
-When setting up the webhook, you will be asked to specify a secret. Using this secret, you can validate that the webhook is from Razorpay. This is one point. Entering the secret is optional, but recommended. The secret should never be exposed publicly.
+This content is from vscode.
 
 ## [](https://razorpay.com/docs/webhooks/#use-cases)Use cases
 
