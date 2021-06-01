@@ -16,12 +16,6 @@ Webhooks allow you to build or set up integrations that subscribe to certain eve
 
 You can set up webhooks from your Dashboard and configure separate URLs for live mode and test mode.
 
-A test mode webhook will only receive events for your test transactions.
-
-In URLs, only port numbers 80 and 443 are currently allowed.
-
-When setting up the webhook, you will be asked to specify a secret. Using this secret, you can validate that the webhook is from Razorpay. Entering the secret is optional, but recommended. The secret should never be exposed publicly.
-
 ## [](https://razorpay.com/docs/webhooks/#use-cases)Use cases
 
 There can be multiple uses for webhook events. Two of these are listed below.
