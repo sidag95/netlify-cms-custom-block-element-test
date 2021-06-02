@@ -24,7 +24,14 @@ This is content from CMS.
 
 ## [](https://razorpay.com/docs/webhooks/#use-cases)Use cases
 
-There can be multiple uses for webhook events. Two of these are listed below.
+This is a complete rewrite for Use cases. I want to add a bunch of bullet points here.
+
+* Bullet 1
+* Bullet 2
+* Bullet 3
+
+  ![Razorpay Logo](download.png "Razorpay Logo")
+* Bullet 4
 
 ### Capturing Delayed Authorized Payments
 
@@ -36,14 +43,6 @@ You can use webhooks to get notified about payments that get authorized and anal
 
 More text
 
-This is a hot fix
-
-@include Partial 1
-
-![Razorpay Logo](/images/download.png)
-
 Updated doc on 27th
-
-
 
 Updated again on 2nd
