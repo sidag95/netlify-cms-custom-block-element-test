@@ -36,6 +36,8 @@ You can use webhooks to get notified about payments that get authorized and anal
 
 More text
 
+This is a hot fix
+
 @include Partial 1
 
 ![Razorpay Logo](/images/download.png)
