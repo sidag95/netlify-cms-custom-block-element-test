@@ -27,3 +27,4 @@ This is an updated document with a hot fix
 ## Adding a new section
 
 This is a new section. How does this look?
+Another hot fix goes here
