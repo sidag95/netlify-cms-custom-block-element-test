@@ -1,0 +1,4 @@
+---
+title: Accountability
+---
+Acc partial
