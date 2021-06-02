@@ -13,6 +13,8 @@ Razorpay Capital is a lending platform that allows you to meet your cash flow ch
 
 * **Easy Financing**: Avoid costly short-term financing for your working capital needs.
 * Another item
+* Adding another Item
+* And another
 
 > Quote
 
@@ -21,7 +23,6 @@ Razorpay Capital is a lending platform that allows you to meet your cash flow ch
 @include Partial 1
 
 1. Acb
-
 
 This is an updated document with a hot fix
 
