@@ -49,4 +49,5 @@ Updating more
 
 Restructuring docs
 
-Updated again on 8nd (Hot fix)
+
+Adding a new line as a hot fix
