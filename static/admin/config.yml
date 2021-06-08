@@ -2,10 +2,13 @@ backend:
     name: github
     repo: sidag95/netlify-cms-custom-block-element-test
     squash_merges: true
+    # site_domain: "http://localhost:3000"
+    # base_url: "http://localhost:3000"
+    # auth_endpoint: "auth"
 publish_mode: editorial_workflow
 media_folder: "/assets/images"
 public_folder: "/assets/images"
-site_url: "https://razorpay.com/docs"
+site_url: "https://betasite.razorpay.com/docs"
 collections:
   - name: "routes" # Used in routes, e.g., /admin/collections/src
     label: "Routes" # Used in the UI
