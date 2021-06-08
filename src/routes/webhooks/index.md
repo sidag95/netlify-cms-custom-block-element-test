@@ -47,6 +47,6 @@ Updated doc on 8th
 
 Updating more
 
-Adding more content
+Restructuring docs
 
 Updated again on 2nd
