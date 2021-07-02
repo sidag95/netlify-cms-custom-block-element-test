@@ -12,7 +12,7 @@ site_url: "https://betasite.razorpay.com/docs"
 collections:
   - name: "routes" # Used in routes, e.g., /admin/collections/src
     label: "Routes" # Used in the UI
-    folder: "src/routes" # The path to the folder where the documents are stored
+    folder: "content/pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     nested: { depth: 100 }
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -30,24 +30,10 @@ collections:
   
   - name: "partials" # Used in routes, e.g., /admin/collections/blog
     label: "Partials" # Used in the UI
-    folder: "src/partials" # The path to the folder where the documents are stored
+    folder: "content/partials" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  
-  - name: "redirects" # Used in routes, e.g., /admin/collections/blog
-    label: "Redirects" # Used in the UI
-    files: 
-      - label: "Redirects"
-        name: "redirects-common"
-        file: "src/redirects-common.yml"
-        fields: # The fields for each document, usually in front matter
-          - {label: "Body", name: "body", widget: "markdown"}
-            
-      - label: "Axis Redirects"
-        name: "redirects-axis"
-        file: "src/redirects-axis.yml"
-        fields: # The fields for each document, usually in front matter
-          - {label: "Body", name: "body", widget: "markdown"}
+
   

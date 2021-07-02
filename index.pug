@@ -1,0 +1,22 @@
+doctype html
+html
+  block vars
+    - pagetitle = frontMatter.title
+  head
+    block head
+      meta(charset='utf-8')
+      title=pagetitle
+      meta(name='robots' content='noindex')
+      meta(name='description' content=frontMatter.desc)
+      meta(name='viewport' content='width=device-width')
+      link(href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet')
+      link(href=`${config.publicPath}app.css` rel='stylesheet' type='text/css')
+  body
+    block body
+      #content
+        main
+          h1#page-title
+            !=pagetitle
+          block content
+            !=content
+    script(src=`${config.publicPath}main.js`)

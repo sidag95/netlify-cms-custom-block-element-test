@@ -49,5 +49,4 @@ Updating more
 
 Restructuring docs
 
-
 Adding a new line as a hot fix
