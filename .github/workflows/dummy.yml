@@ -11,7 +11,7 @@ jobs:
       - name: commit-status-updater
         uses: ouzi-dev/commit-status-updater@v1.1.2
         env:
-          DEPLOY_URL: http://betasite.razorpay.com/docs/razorpay/${{github.ref}}
+          DEPLOY_URL: http://betasite.razorpay.com/docs/razorpay/${{github.ref#refs/heads/}}
         with:
           status: "success"
           name: "deploy"
