@@ -6,12 +6,14 @@ jobs:
   test:
     runs-on: ubuntu-20.04
     steps:
-      - name: Echo
-        run: echo hi
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
       - name: commit-status-updater
         uses: ouzi-dev/commit-status-updater@v1.1.2
         env:
-          DEPLOY_URL: http://betasite.razorpay.com/docs/razorpay/${{github.ref#refs/heads/}}
+          DEPLOY_URL: http://betasite.razorpay.com/docs/razorpay/${{steps.extract_branch.outputs.branch}}
         with:
           status: "success"
           name: "deploy"
