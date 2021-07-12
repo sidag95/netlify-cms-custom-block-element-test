@@ -8,3 +8,12 @@ jobs:
     steps:
       - name: Echo
         run: echo hi
+      - name: Update status to pending
+        uses: geekodour/gh-actions-custom-status@v0.0.4
+        env:
+          LAST_COMMIT_SHA: ${{ github.event.client_payload.LAST_COMMIT_SHA }}
+        with:
+          args: >-
+            --state=success
+            --context=deploy-preview
+            --target_url=https://betasite.razorpay.com/docs/razorpay/$LAST_COMMIT_SHA
