@@ -11,7 +11,7 @@ jobs:
       - name: Update status to pending
         uses: geekodour/gh-actions-custom-status@v0.0.4
         env:
-          BRANCH: ${GITHUB_REF#refs/heads/}
+          BRANCH: ${{github.ref#refs/heads/}}
         with:
           args: >-
             --state=success
