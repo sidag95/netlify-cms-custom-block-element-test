@@ -5,6 +5,8 @@ on: pull_request
 jobs:
   test:
     runs-on: ubuntu-20.04
+    env:
+      DEPLOY_URL: http://betasite.razorpay.com/docs/razorpay/${{github.ref}}
     steps:
       - name: Echo
         run: echo hi
@@ -13,3 +15,4 @@ jobs:
         with:
           status: "success"
           name: "deploy"
+          url: ${{DEPLOY_URL}}
