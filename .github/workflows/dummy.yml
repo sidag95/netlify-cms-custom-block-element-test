@@ -1,6 +1,6 @@
 name: Dummy workflow
 
-on: pull_request
+on: push
 
 jobs:
   test:
@@ -15,4 +15,4 @@ jobs:
         with:
           status: "success"
           name: "deploy"
-          url: ${DEPLOY_URL}
+          url: "${DEPLOY_URL}"
