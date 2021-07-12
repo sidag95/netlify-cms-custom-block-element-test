@@ -5,13 +5,13 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-20.04
-    env:
-      DEPLOY_URL: http://betasite.razorpay.com/docs/razorpay/${{github.ref}}
     steps:
       - name: Echo
         run: echo hi
       - name: commit-status-updater
         uses: ouzi-dev/commit-status-updater@v1.1.2
+        env:
+          DEPLOY_URL: http://betasite.razorpay.com/docs/razorpay/${{github.ref}}
         with:
           status: "success"
           name: "deploy"
