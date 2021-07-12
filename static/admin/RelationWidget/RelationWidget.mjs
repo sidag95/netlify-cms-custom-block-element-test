@@ -13,7 +13,7 @@ export const relationWidgetDefinition = {
       widget: "relation",
       collection: "partials",
       search_fields: ["title"],
-      value_field: "title",
+      value_field: "path",
       display_fields: ["title"],
     },
   ],
