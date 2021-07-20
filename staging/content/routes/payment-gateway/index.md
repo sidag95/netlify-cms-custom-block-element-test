@@ -4,6 +4,6 @@ title: Payment gateway
 ---
 Payment Gateway
 
-
-
 Proposed changes
+
+Another
