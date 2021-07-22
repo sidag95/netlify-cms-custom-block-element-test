@@ -7,3 +7,7 @@ Payment Gateway
 Proposed changes
 
 Another change?
+
+Yes
+
+With reduced perms?
