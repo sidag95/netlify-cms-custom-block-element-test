@@ -9,3 +9,5 @@ Proposed changes
 Another change?
 
 Yes
+
+With reduced perms?
