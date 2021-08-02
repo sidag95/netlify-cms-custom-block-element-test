@@ -1,3 +1,4 @@
 body: |
   - /: home
   - payment-links/api/new/create: payment-links/api/new/create/standard
+  - abc: bac/cad
