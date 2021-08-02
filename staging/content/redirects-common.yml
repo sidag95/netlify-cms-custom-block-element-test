@@ -3,3 +3,10 @@ body:
   - payment-links/api/new/create: payment-links/api/new/create/standard
   - abc: bac/cad
   - bcd: bcd/bcd
+values:
+  - redirect:
+      from: /abc/bcd
+      to: /bcd/cde
+  - redirect:
+      from: ab
+      to: bx
