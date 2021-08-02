@@ -7,3 +7,6 @@ values:
   - redirect:
       from: /abc/bcd
       to: /bcd/cde
+  - redirect:
+      from: ab
+      to: bx
