@@ -1,5 +1,5 @@
 body:
-  /: home
-  payment-links/api/new/create: payment-links/api/new/create/standard
-  abc: bac/cad
-  bcd: bcd/bcd
+  - /: home
+  - payment-links/api/new/create: payment-links/api/new/create/standard
+  - abc: bac/cad
+  - bcd: bcd/bcd
