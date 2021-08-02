@@ -1,0 +1,4 @@
+values:
+  - redirect:
+      from: /abc/bcd
+      to: /bcd/cde
